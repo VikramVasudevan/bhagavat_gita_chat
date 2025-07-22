@@ -49,28 +49,49 @@ graph = graph_builder.compile()
 def chat(message, history):
     # Ensure history is a list of message dicts
     relevant_sections = mydb.get_data(message)
-    if not history:
-        history = [
-            {
-                "role": "system",
-                "content": f"""You are a religious researcher, expert in Hindu literature like Bhagavat Gita. 
-                User asks questions and you will answer from the context given below. it is important that you answer ONLY from the context given below and nowhere else.
-                In your response, mention which chapter and verses from which you came up with this explanation.
-                DO NOT talk about other spiritual traditions. Limit yourself to the context at all times.
-                organize your response under subheadings for clarity and keep it simple in terms of language and brief. Do not add your interpretation or additional commentary.
-                Answer any question in the context of Bhagavat Gita (particularly from the context given below). If you dont know the answer, just say so.
 
-                here is the context:
-                {relevant_sections}
-            """,
-            },
+    system_prompt = {
+        "role": "system",
+        "content": f"""
+You are a religious guru and an expert in Hindu literature, particularly the Bhagavad Gita.
+
+You must strictly follow the rules below:
+
+1. You are only allowed to answer using the content provided in the context below.
+2. Do NOT draw from any other scriptures, spiritual traditions, or external knowledge — even if the user asks.
+3. If the question cannot be answered from the context of the Bhagavad Gita (as provided below), respond with:
+   "I'm only able to answer questions that relate to the Bhagavad Gita based on the context provided. Let's return to that topic."
+4. Do NOT add personal interpretations or speculative commentary.
+5. Every valid answer must include:
+   - Topic
+   - The chapters in Gita that deal with this topic
+   - The specific verses in those chapters
+   - Summary
+   - Follow-up questions that you may have on this topic
+
+Your answers must be in **simple, clear language** and remain strictly tied to the context.
+
+--------------------------
+## CONTEXT:
+{relevant_sections}
+""",
+    }
+
+    # Always prepend system prompt freshly to avoid drift
+    chat_history = [system_prompt]
+
+    if not history:
+        chat_history.append(
             {
-                "role" : "assistant",
-                "content" : "Namaste, Ask me any questions on Bhagavat Gita!"
+                "role": "assistant",
+                "content": "Namaste, Ask me any questions on Bhagavat Gita!",
             }
-        ]
-    initial_state = State(messages=history + [{"role": "user", "content": message}])
-    print("initial_state = ", initial_state)
+        )
+    else:
+        chat_history += history
+
+    chat_history.append({"role": "user", "content": message})
+    initial_state = State(messages=chat_history)
     response = graph.invoke(initial_state)
     return response["messages"][-1].content
 
@@ -81,12 +102,23 @@ def main():
         chat,
         type="messages",
         title="Let's chat on Bhagavat Gita",
+        # chatbot=gr.Chatbot(
+        #     type="messages",
+        #     value=[
+        #         {
+        #             "role": "assistant",
+        #             "content": "Namaste! I'm here to answer any questions on Bhagavat Gita.",
+        #         }
+        #     ]
+        # ),
         examples=[
             "What does Gita say about Karma?",
             "Why did God create this world?",
             "What is the relationship between knowledge and action?",
-            "Who are friends and enemies per Gita?"
+            "Who are friends and enemies per Gita?",
+            "According to Gita, what is devotion?",
         ],
+        example_labels=["Karma", "Creation", "Knowledge", "Relationships", "Devotion"],
     ).launch()
 
 
