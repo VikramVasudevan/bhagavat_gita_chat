@@ -1,0 +1,10 @@
+chromadb
+dotenv
+gradio
+ipython
+langchain
+langchain-community
+langchain-openai
+langgraph
+pydantic
+pypdf
