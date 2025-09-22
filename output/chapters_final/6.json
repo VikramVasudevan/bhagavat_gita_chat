@@ -96,7 +96,7 @@
   },
   {
     "verse_number": 5,
-    "verse_title": "Bhagavad Gita 6.5 – Uddhared Atmanatmanam Natmanam Avasadayet",
+    "verse_title": "Bhagavad Gita: Chapter 6, Verse 5",
     "sanskrit": "उद्धरेदात्मनात्मानं नात्मानमवसादयेत् |आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मन: || 5||",
     "transliteration": "uddhared ātmanātmānaṁ nātmānam avasādayetātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ",
     "word_by_word_meaning": "uddharet—elevate; ātmanā—through the mind; ātmānam—the self; na—not; ātmānam—the self; avasādayet—degrade; ātmā—the mind; eva—certainly; hi—indeed; ātmanaḥ—of the self; bandhuḥ—friend; ātmā—the mind; eva—certainly; ripuḥ—enemy; ātmanaḥ—of the self",
@@ -112,6 +112,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/05/Bhagavad-Gita-Chapter-6-Verse-5.mp3",
     "source": "https://vivekavani.com/b6v5/",
+    "relative_verse_number": 5,
+    "chapter_number": 6,
+    "chapter_title": "Dhyāna Yoga",
     "_global_index": 236
   },
   {

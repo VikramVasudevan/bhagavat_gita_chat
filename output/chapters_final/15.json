@@ -1,7 +1,7 @@
 [
   {
     "verse_number": 1,
-    "verse_title": "Bhagavad Gita 15.1 – Urdhva Mulam Adhah Sakham",
+    "verse_title": "Bhagavad Gita: Chapter 15, Verse 1",
     "sanskrit": "श्रीभगवानुवाच |ऊर्ध्वमूलमध:शाखमश्वत्थं प्राहुरव्ययम् |छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् || 1||",
     "transliteration": "śhrī-bhagavān uvāchaūrdhva-mūlam adhaḥ-śhākham aśhvatthaṁ prāhur avyayamchhandānsi yasya parṇāni yas taṁ veda sa veda-vit",
     "word_by_word_meaning": "śhrī-bhagavān uvācha—the Supreme Divine Personality said; ūrdhva-mūlam—with roots above; adhaḥ—downward; śhākham—branches; aśhvattham—the sacred fig tree; prāhuḥ—they speak; avyayam—eternal; chhandānsi—Vedic mantras; yasya—of which; parṇāni—leaves; yaḥ—who; tam—that; veda—knows; saḥ—he; veda-vit—the knower of the Vedas",
@@ -33,6 +33,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/05/Bhagavad-Gita-Chapter-15-Verse-1.mp3",
     "source": "https://vivekavani.com/b15v1/",
+    "relative_verse_number": 1,
+    "chapter_number": 15,
+    "chapter_title": "Puruṣhottama Yoga",
     "_global_index": 551
   },
   {

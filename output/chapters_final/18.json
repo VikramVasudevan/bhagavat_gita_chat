@@ -1713,7 +1713,7 @@
   },
   {
     "verse_number": 66,
-    "verse_title": "Bhagavad Gita 18.66 – Sarva Dharman Parityajya",
+    "verse_title": "Bhagavad Gita: Chapter 18, Verse 66",
     "sanskrit": "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज |अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुच: || 66||",
     "transliteration": "sarva-dharmān parityajya mām ekaṁ śharaṇaṁ vrajaahaṁ tvāṁ sarva-pāpebhyo mokṣhayiṣhyāmi mā śhuchaḥ",
     "word_by_word_meaning": "sarva-dharmān—all varieties of dharmas; parityajya—abandoning; mām—unto me; ekam—only; śharaṇam—take refuge; vraja—take; aham—I; tvām—you; sarva—all; pāpebhyaḥ—from sinful reactions; mokṣhayiṣhyāmi—shall liberate; mā—do not; śhuchaḥ—fear",
@@ -1782,6 +1782,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/04/Bhagavad-Gita-Chapter-18-Verse-66.mp3",
     "source": "https://vivekavani.com/b18v66/",
+    "relative_verse_number": 66,
+    "chapter_number": 18,
+    "chapter_title": "Mokṣha Sanyāsa Yoga",
     "_global_index": 689
   },
   {
@@ -1931,7 +1934,7 @@
   },
   {
     "verse_number": 73,
-    "verse_title": "Bhagavad Gita 18.73 – Nasto Mohah Smrtir Labdha",
+    "verse_title": "Bhagavad Gita: Chapter 18, Verse 73",
     "sanskrit": "अर्जुन उवाच |नष्टो मोह: स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत |स्थितोऽस्मि गतसन्देह: करिष्ये वचनं तव || 73||",
     "transliteration": "arjuna uvāchanaṣhṭo mohaḥ smṛitir labdhā tvat-prasādān mayāchyutasthito ‘smi gata-sandehaḥ kariṣhye vachanaṁ tava",
     "word_by_word_meaning": "arjunaḥ uvācha—Arjun said; naṣhṭaḥ—dispelled; mohaḥ—illusion; smṛitiḥ—memory; labdhā—regained; tvat-prasādāt—by your grace; mayā—by me; achyuta—Shree Krishna, the infallible one; sthitaḥ—situated; asmi—I am; gata-sandehaḥ—free from doubts; kariṣhye—I shall act; vachanam—instructions; tava—your",
@@ -1961,6 +1964,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/04/Bhagavad-Gita-Chapter-18-Verse-73.mp3",
     "source": "https://vivekavani.com/b18v73/",
+    "relative_verse_number": 73,
+    "chapter_number": 18,
+    "chapter_title": "Mokṣha Sanyāsa Yoga",
     "_global_index": 696
   },
   {

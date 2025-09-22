@@ -43,7 +43,7 @@
   },
   {
     "verse_number": 3,
-    "verse_title": "Bhagavad Gita 2.3 – Klaibyam Ma Sma Gamah Partha",
+    "verse_title": "Bhagavad Gita: Chapter 2, Verse 3",
     "sanskrit": "क्लैब्यं मा स्म गम: पार्थ नैतत्त्वय्युपपद्यते |क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप || 3||",
     "transliteration": "klaibyaṁ mā sma gamaḥ pārtha naitat tvayyupapadyatekṣhudraṁ hṛidaya-daurbalyaṁ tyaktvottiṣhṭha parantapa",
     "word_by_word_meaning": "klaibyam—impotence; mā sma gamaḥ—do not yield to; pārtha—O Arjuna!; etat—this; tvayi—to you; na upapadyate—is not fit; kṣhudram—mean; hṛidaya-daurbalyaṁ—weak-heartedness; tyaktvā—giving up; uttiṣhṭha—arise; param-tapa—scorcher of enemies",
@@ -76,6 +76,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2021/07/Bhagavad-Gita-Chapter-2-Verse-3.mp3",
     "source": "https://vivekavani.com/b2v3/",
+    "relative_verse_number": 3,
+    "chapter_number": 2,
+    "chapter_title": "Sankhya Yoga",
     "_global_index": 50
   },
   {
@@ -1260,7 +1263,7 @@
   },
   {
     "verse_number": 50,
-    "verse_title": "Bhagavad Gita 2.50 – Yogah Karmasu Kaushalam",
+    "verse_title": "Bhagavad Gita: Chapter 2, Verse 50",
     "sanskrit": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते |तस्माद्योगाय युज्यस्व योग: कर्मसु कौशलम् || 50||",
     "transliteration": "buddhi-yukto jahātīha ubhe sukṛita-duṣhkṛitetasmād yogāya yujyasva yogaḥ karmasu kauśhalam",
     "word_by_word_meaning": "buddhi-yuktaḥ—endowed with wisdom; jahāti—get rid of; iha—in this life; ubhe—both; sukṛita-duṣhkṛite—good and bad deeds; tasmāt—therefore; yogāya—for Yog; yujyasva—strive for; yogaḥ—yog is; karmasu kauśhalam—the art of working skillfully",
@@ -1282,6 +1285,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2021/07/Bhagavad-Gita-Chapter-2-Verse-50.mp3",
     "source": "https://vivekavani.com/b2v50/",
+    "relative_verse_number": 50,
+    "chapter_number": 2,
+    "chapter_title": "Sankhya Yoga",
     "_global_index": 97
   },
   {
@@ -1606,8 +1612,8 @@
   },
   {
     "verse_number": 62,
-    "verse_title": "Bhagavad Gita 2.62-63; Dhyayato Visayan Pumsah",
-    "sanskrit": "ध्यायतो विषयान्पुंस: सङ्गस्तेषूपजायते |सङ्गात्सञ्जायते काम: कामात्क्रोधोऽभिजायते || 62||क्रोधाद्भवति सम्मोह: सम्मोहात्स्मृतिविभ्रम: |स्मृतिभ्रंशाद् बुद्धिनाशो बुद्धिनाशात्प्रणश्यति || 63||",
+    "verse_title": "Bhagavad Gita: Chapter 2, Verse 62",
+    "sanskrit": "ध्यायतो विषयान्पुंस: सङ्गस्तेषूपजायते |सङ्गात्सञ्जायते काम: कामात्क्रोधोऽभिजायते || 62||",
     "transliteration": "dhyāyato viṣhayān puṁsaḥ saṅgas teṣhūpajāyatesaṅgāt sañjāyate kāmaḥ kāmāt krodho ’bhijāyatekrodhād bhavati sammohaḥ sammohāt smṛiti-vibhramaḥsmṛiti-bhranśhād buddhi-nāśho buddhi-nāśhāt praṇaśhyati",
     "word_by_word_meaning": "dhyāyataḥ—contemplating; viṣhayān—sense objects; puṁsaḥ—of a person; saṅgaḥ—attachment; teṣhu—to them (sense objects); upajāyate—arises; saṅgāt—from attachment; sañjāyate—develops; kāmaḥ—desire; kāmāt—from desire; krodhaḥ—anger; abhijāyate—ariseskrodhāt—from anger; bhavati—comes; sammohaḥ—clouding of judgement; sammohāt—from clouding of judgement; smṛiti—memory; vibhramaḥ—bewilderment; smṛiti-bhranśhāt—from bewilderment of memory; buddhi-nāśhaḥ—destruction of intellect; buddhi-nāśhāt—from destruction of intellect; praṇaśhyati—one is ruined",
     "translation": [
@@ -1633,6 +1639,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2021/08/Bhagavad-Gita-Chapter-2-Verse-62-and-63.mp3",
     "source": "https://vivekavani.com/b2v62/",
+    "relative_verse_number": 62,
+    "chapter_number": 2,
+    "chapter_title": "Sankhya Yoga",
     "_global_index": 109
   },
   {

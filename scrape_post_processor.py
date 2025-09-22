@@ -10,19 +10,21 @@ os.makedirs(output_dir, exist_ok=True)
 with open("output/bhagavat_gita.json", "r", encoding="utf-8") as f:
     chapters_metadata = json.load(f)
 chapter_lookup = {c["chapter_number"]: c["chapter_title"] for c in chapters_metadata}
-
+print("chapter_lookup = ", chapter_lookup)
 global_counter = 1  # overall verse position across all chapters
 
 def split_combined_entry(entry, chapter_num):
     results = []
 
-    # detect range in verse title (e.g., "Verse 4-6")
+    # Try to detect range in verse title (e.g., "Verse 4-6")
     m = re.search(r"Verse\s+(\d+)(?:\s*-\s*(\d+))?", entry.get("verse_title", ""))
-    if not m:
-        return [entry]  # no split needed
+    if m:
+        start = int(m.group(1))
+        end = int(m.group(2)) if m.group(2) else start
+    else:
+        # fallback: use existing verse_number
+        start = end = entry.get("verse_number", 1)
 
-    start = int(m.group(1))
-    end = int(m.group(2)) if m.group(2) else start
     verse_count = end - start + 1
 
     for i, v in enumerate(range(start, end + 1)):
@@ -65,6 +67,7 @@ def split_combined_entry(entry, chapter_num):
         results.append(new_entry)
 
     return results
+
 
 # Sort files numerically by chapter
 json_files = [f for f in os.listdir(input_dir) if f.endswith(".json")]

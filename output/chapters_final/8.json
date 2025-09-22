@@ -185,7 +185,7 @@
   },
   {
     "verse_number": 7,
-    "verse_title": "Bhagavad Gita 8.7 – Tasmat Sarveshu Kaleshu",
+    "verse_title": "Bhagavad Gita: Chapter 8, Verse 7",
     "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च |मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम् || 7||",
     "transliteration": "tasmāt sarveṣhu kāleṣhu mām anusmara yudhya chamayyarpita-mano-buddhir mām evaiṣhyasyasanśhayam",
     "word_by_word_meaning": "tasmāt—therefore; sarveṣhu—in all; kāleṣhu—times; mām—Me; anusmara—remember; yudhya—fight; cha—and; mayi—to Me; arpita—surrender; manaḥ—mind; buddhiḥ—intellect; mām—to Me; eva—surely; eṣhyasi—you shall attain; asanśhayaḥ—without a doubt",
@@ -221,6 +221,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/05/Bhagavad-Gita-Chapter-8-Verse-7.mp3",
     "source": "https://vivekavani.com/b8v7/",
+    "relative_verse_number": 7,
+    "chapter_number": 8,
+    "chapter_title": "Akṣhara Parabrahma Yoga",
     "_global_index": 316
   },
   {

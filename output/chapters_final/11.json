@@ -243,7 +243,7 @@
   },
   {
     "verse_number": 12,
-    "verse_title": "Bhagavad Gita 11.12 – Divi Surya Sahasrasya",
+    "verse_title": "Bhagavad Gita: Chapter 11, Verse 12",
     "sanskrit": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता |यदि भा: सदृशी सा स्याद्भासस्तस्य महात्मन: || 12||",
     "transliteration": "divi sūrya-sahasrasya bhaved yugapad utthitāyadi bhāḥ sadṛiśhī sā syād bhāsas tasya mahātmanaḥ",
     "word_by_word_meaning": "divi—in the sky; sūrya—suns; sahasrasya—thousand; bhavet—were; yugapat—simultaneously; utthitā—rising; yadi—if; bhāḥ—splendor; sadṛiśhī—like; sā—that; syāt—would be; bhāsaḥ—splendor; tasya—of them; mahā-ātmanaḥ—the great personality",
@@ -262,6 +262,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/05/Bhagavad-Gita-Chapter-11-Verse-12.mp3",
     "source": "https://vivekavani.com/b11v12/",
+    "relative_verse_number": 12,
+    "chapter_number": 11,
+    "chapter_title": "Viśhwarūpa Sandarśhana Yoga",
     "_global_index": 425
   },
   {

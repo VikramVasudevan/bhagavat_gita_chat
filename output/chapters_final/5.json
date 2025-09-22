@@ -464,7 +464,7 @@
   },
   {
     "verse_number": 18,
-    "verse_title": "Bhagavad Gita 5.18 -Vidya Vinaya Sampanne",
+    "verse_title": "Bhagavad Gita: Chapter 5, Verse 18",
     "sanskrit": "विद्याविनयसम्पन्ने ब्राह्मणे गवि हस्तिनि |शुनि चैव श्वपाके च पण्डिता: समदर्शिन: || 18||",
     "transliteration": "vidyā-vinaya-sampanne brāhmaṇe gavi hastiniśhuni chaiva śhva-pāke cha paṇḍitāḥ sama-darśhinaḥ",
     "word_by_word_meaning": "vidyā—divine knowledge; vinaya—humbleness; sampanne—equipped with; brāhmaṇe—a Brahmin; gavi—a cow; hastini—an elephant; śhuni—a dog; cha—and; eva—certainly; śhva-pāke—a dog-eater; cha—and; paṇḍitāḥ—the learned; sama-darśhinaḥ—see with equal vision",
@@ -484,6 +484,9 @@
     ],
     "audio": "https://cdn.vivekavani.com/wp-content/uploads/2022/05/Bhagavad-Gita-Chapter-5-Verse-18.mp3",
     "source": "https://vivekavani.com/b5v18/",
+    "relative_verse_number": 18,
+    "chapter_number": 5,
+    "chapter_title": "Karma Sanyāsa Yoga",
     "_global_index": 220
   },
   {
