@@ -79,7 +79,7 @@ for fname in sorted(os.listdir(input_dir), key=lambda f: int(f.split(".")[0])):
         metadata = {
             "chapter_number": chapter_number,
             "chapter_title": verse.get("chapter_title"),
-            "verse_number": verse.get("verse_number"),
+            "relative_verse_number": verse.get("relative_verse_number"),
             "verse_title": verse.get("verse_title"),
             "sanskrit": verse.get("sanskrit"),
             "transliteration": verse.get("transliteration"),
@@ -96,7 +96,7 @@ for fname in sorted(os.listdir(input_dir), key=lambda f: int(f.split(".")[0])):
             documents=[text_to_embed_str],
             embeddings=[embedding_vector],
             metadatas=[metadata],
-            ids=[f"b{chapter_number}v{verse['verse_number']}"]
+            ids=[f"b{chapter_number}v{verse['relative_verse_number']}"]
         )
 
     print(f"✅ Loaded chapter {chapter_number} into Chroma DB")

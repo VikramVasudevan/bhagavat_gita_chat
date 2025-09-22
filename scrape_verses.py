@@ -30,8 +30,14 @@ def scrape_verse(chapter_num, verse_num):
     entry_content = soup.find("div", class_="entry-content")
 
     # Sanskrit + transliteration
-    sanskrit = entry_content.find("p") if entry_content else None
-    transliteration = sanskrit.find_next("p") if sanskrit else None
+    sanskrit = (
+        entry_content.find("p", class_="has-text-align-center")
+        if entry_content
+        else None
+    )
+    transliteration = (
+        sanskrit.find_next("p", class_="has-text-align-center") if sanskrit else None
+    )
 
     # Audio
     audio_tag = soup.find("audio")
