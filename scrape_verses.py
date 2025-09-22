@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import os
+from tqdm import tqdm
 
 # Load the chapters JSON
 with open("output/bhagavat_gita.json", "r", encoding="utf-8") as f:
@@ -14,25 +15,49 @@ base_url = "https://vivekavani.com/b{chapter}v{verse}/"
 
 
 def scrape_verse(chapter_num, verse_num):
-    print("scraping chapter:", chapter_num, ":verse#", verse_num)
+    # print("scraping chapter#", chapter_num, ":verse#", verse_num)
     url = base_url.format(chapter=chapter_num, verse=verse_num)
     resp = requests.get(url)
     if resp.status_code != 200:
-        print(f"⚠️ Skipping {url} (status {resp.status_code})")
+        # print(f"⚠️ Skipping {url} (status {resp.status_code})")
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # Example structure (you may need to tweak based on actual HTML)
+    # Title + content container
     header = soup.find("header", class_="entry-header")
-    verse_title = header.find("h1", class_="entry-title")
-    entry_content = header.find_next("div", class_="entry-content")
-    sanskrit = entry_content.find("p")
-    transliteration = sanskrit.find_next("p")
+    verse_title = header.find("h1", class_="entry-title") if header else None
+    entry_content = soup.find("div", class_="entry-content")
+
+    # Sanskrit + transliteration
+    sanskrit = entry_content.find("p") if entry_content else None
+    transliteration = sanskrit.find_next("p") if sanskrit else None
+
+    # Audio
     audio_tag = soup.find("audio")
-    word_by_word_meaning = audio_tag.find_next("p")
-    translation = word_by_word_meaning.find_next("p")
-    commentary = translation.find_next("p")
+
+    # Word-by-word meaning (just first <p> after audio)
+    word_by_word_meaning = audio_tag.find_next("p") if audio_tag else None
+
+    # --- Translation section ---
+    translation = []
+    h3_translation = soup.find("h3", string=lambda t: t and "Translation" in t)
+    if h3_translation:
+        for sib in h3_translation.find_next_siblings():
+            if sib.name == "h3" and "Commentary" in sib.get_text():
+                break
+            if sib.name == "p":
+                translation.append(sib.get_text(strip=True))
+
+    # --- Commentary section ---
+    commentary = []
+    h3_commentary = soup.find("h3", string=lambda t: t and "Commentary" in t)
+    if h3_commentary:
+        for sib in h3_commentary.find_next_siblings():
+            if sib.name == "div":
+                break
+            if sib.name == "p":
+                commentary.append(sib.get_text(strip=True))
 
     return {
         "verse_number": verse_num,
@@ -44,8 +69,8 @@ def scrape_verse(chapter_num, verse_num):
         "word_by_word_meaning": (
             word_by_word_meaning.get_text(strip=True) if word_by_word_meaning else None
         ),
-        "translation": translation.get_text(strip=True) if translation else None,
-        "commentary": commentary.get_text(strip=True) if commentary else None,
+        "translation": translation,
+        "commentary": commentary,
         "audio": audio_tag["src"] if audio_tag and audio_tag.has_attr("src") else None,
         "source": url,
     }
@@ -59,7 +84,7 @@ for chapter in chapters:
     print(f"📖 Scraping Chapter {chapter_num} ({verse_start}–{verse_end})")
 
     verses = []
-    for v in range(verse_start, verse_end + 1):
+    for v in tqdm(range(verse_start, verse_end + 1)):
         verse_data = scrape_verse(chapter_num, v)
         if verse_data:
             verses.append(verse_data)
