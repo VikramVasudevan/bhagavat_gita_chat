@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.13.5",
     "chromadb>=1.0.15",
     "dotenv>=0.9.9",
     "gradio>=5.38.0",
